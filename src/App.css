@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root {
+  --dark-blue:hsl(209, 23%, 22%);
+  --verydark-blue:hsl(207, 26%, 17%);
+  --dark-gray:hsl(0, 0%, 52%);
+  --very-lighgray:hsl(0, 0%, 98%);
+  --white:hsl(0, 0%, 100%)
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 14px;  
+}
+
+.light {
+  background-color: var(--very-lighgray);
+  line-height: 1.6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 14px;  
+}
+
+.dark {
+   line-height: 1.6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 14px;  
+  background-color: var(--verydark-blue) !important;
+  color:#fff !important;
+}
+
+
+
+.white-content {
+  background: #e4e4e4;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--dark-gray);
+  padding:2px 30px;
+  color: var(--dark-gray);
+  height: 30px;
+}
+
+
+.btn-back {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+.btn-back svg {
+  color: var(--dark-blue);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav h1{
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0;
+}
+
+nav svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.main__area {
+  margin-top: 50px;
+}
+
+.main__area .inputs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.main__area select {
+  background: orange;
+}
+
+.main__area .inputs .icon-holder svg {
+  position: absolute;
+}
+.main__area  input[type="text"] {
+  border: 1px solid var(--very-lighgray);
+  font-size: 16px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px 60px;
+}
+
+.main__area .country__search {
+  width: 500px;
+}
+
+.main__area input:focus {
+  outline:none;
+}
+
+.main__area .icon-holder svg {
+  color: var(--dark-gray);
+  font-size: 20px;
+  padding: 20px 20px;
+  
+}
+
+.main__area .dropdown {
+  position: relative;
+}
+
+.dropdown::before {
+      content:  '';
+      position: absolute; 
+      width:  8px;
+      height:  8px;
+      border:  2px solid #333;
+      right:  20px;
+      top:  15px;
+      z-index: 10000;
+      border-top:  2px solid #fff;
+      border-right:  2px solid #fff;
+      transform: rotate(-45deg);
+      transition: 0.5s;
+      pointer-events: none;
+    }
+
+    .dropdown .option {
+      position: absolute;
+      top:  70px;
+      width:  100%;
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;  
+      overflow: hidden;
+      display: none;
+    }
+
+      .dropdown .option div {
+      padding:  12px 20px;
+      cursor: pointer;
+    }
+
+    .dropdown .option div:hover{
+      background: #62baea;
+      color: #fff;
+    }    
+    
+
+    .dropdown.active .option {
+      display: block;
+    }
+
+
+    /* countries sections */
+    .countries__section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px; 
+    }
+
+    .countries__section img {
+      width: 100%;
+    }
+
+    .countries__section .card {
+      background: #fff;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      padding-bottom: 10px;
+    }
+
+    .countries__section h2 {
+      margin-bottom: 20px;
+    }
+
+    .countries__section span {
+      color: var(--dark-gray);
+    }
+    .countries__section h5 {
+      color: var(--dark-blue);
+    }
+    .countries__section .card .card__content {
+      padding: 20px;
+    }
+
+
+    /*Detail Page */
+
+.detail__section {
+  margin-top: 50px;
+}
+
+  .grid-2 {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  .detail__section img {
+      width: 500px;
+  }
+
+  .detail__section .detail__inner {
+    align-self: center;
+  }
+
+.detail__inner h3 {
+    margin-bottom:  20px;
+  }
+
+  .detail__section .detail__inner .detail__country {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .detail__section .detail__culture {
+    margin-top: 50px;
+  }
+
+  .detail__section .country__borders {
+    display: flex;
+  }
+
+  .country__borders {
+    justify-self: center;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 85px;
+
+}
+
+.country__borders h3 {
+  margin-right: 20px;
+}
+.country__borders button {
+  margin-right: 10px;
+}
+
+.detail__inner h4 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+.detail__inner .text-lg {
+  font-size: 25px;
+}
+
+.detail__inner span {
+  color: var(--dark-gray);
+  font-size: 13px;
+}
+
+
+@media(max-width:480px) {
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main__area .country__search {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+ 
+  .main__area .country__search {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .main__area .filter__search {
+    width: 200px;
+  }
+
+
+  nav {
+    padding: 20px;
+    height: 80px;
+    font-size: 10px;
+  }
+
+  nav h1 {
+    font-size: 10px;
+  }
+
+  nav svg {
+  margin-right: 2px;
+  cursor: pointer;
+}
+ 
+
+  .countries__section {
+    grid-template-columns: 1fr;
+  }
+
+   .grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .grid-2 img {
+      width: 300px;
+    }
+
+     .detail__country {
+        flex-direction: column;
+    }
+
+    .detail__section h3.border__header {
+        display: inline-block;
+    }
+    
+    .country__borders {
+      margin-left: 0px;
+      flex-direction: column;
+    }
+
+    .country__borders button {
+      margin: 10px 0;
+    }
+
+    .btn-outline {
+      padding: 7px
+    }
+}
