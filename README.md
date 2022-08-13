@@ -31,14 +31,12 @@ Users should be able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode *(optional)*
 
-### DarkMode
-![](./public/darkmode-home.png)
+
 
 ### Mobile Detail page
 ![](./public/detail-mobile.png)
 
-### Light
-![](./public/lightmode-home.png)
+
 
 
 
@@ -125,7 +123,7 @@ useEffect(() => {
 ## Author
 
 - Website - [Hakizamana Fred](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/hakizimana-fred)
+- Frontend Mentor - [@hakizimana-fred](https://www.frontendmentor.io/profile/hakizimana-fred)
 - Twitter - [@hakifred201](https://www.twitter.com/hakifred201)
 
 
